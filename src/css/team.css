@@ -1,0 +1,160 @@
+.team-section {
+  margin-top: 120px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url('../img/hero.jpg') no-repeat center center/cover;
+}
+
+.section-title {
+  margin-top: 60px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+  position: relative;
+  animation: slideIn 1s ease-out, textEffect 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textEffect {
+  0% {
+    text-shadow: 0 0 5px #5f8aff, 0 0 10px #5f8aff, 0 0 15px #ba7bfe;
+    color: #fff;
+  }
+  50% {
+    text-shadow: 0 0 10px #5f8aff, 0 0 20px #5f8aff, 0 0 30px #ba7bfe;
+    color: #ba7bfe;
+  }
+  100% {
+    text-shadow: 0 0 5px #5f8aff, 0 0 10px #5f8aff, 0 0 15px #ba7bfe;
+    color: #fff;
+  }
+}
+
+.section-title:hover {
+  color: #5f8aff;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Основний контейнер */
+.third-section {
+  background-color: #f4f4fd;
+  padding: 40px 0;
+}
+
+.team-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* Убираем прокрутку */
+  position: relative; /* Для позиционирования дотов */
+}
+
+.team-carousel {
+  position: relative;
+}
+
+/* Список команд */
+.third-section-list {
+  display: flex;
+
+  gap: 40px; /* Расстояние между карточками */
+  transition: transform 0.8s ease-in-out; /* Плавное перемещение */
+  width: fit-content;
+}
+
+.third-section-team {
+  flex: 0 0 calc(15% - 20px);
+  list-style: none;
+  text-align: center;
+}
+
+.third-section-team img {
+  width: 480px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.third-section-team:hover img {
+  transform: scale(1.05);
+}
+
+.third-section-member {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #ba7bfe;
+  text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+
+.third-section-position {
+  font-size: 18px;
+  color: #bbb;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  margin: 40px 0;
+  left: 50%;
+  transform: translateX(-50%); /* Центрируем доты */
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item-link:hover,
+.social-item-link:focus {
+  background-color: #404bbf;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007bff;
+}

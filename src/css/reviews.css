@@ -1,0 +1,167 @@
+.section-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url('../img/hero.jpg') no-repeat center center/cover;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.reviews-container .review:last-child {
+  margin-bottom: 0;
+}
+.reviews-list {
+  margin-bottom: 24px;
+}
+
+.user-review {
+  padding: 32px;
+  background-color: rgba(186, 123, 254, 0.7);
+  border-radius: 16px;
+}
+
+.user-review:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.text-review {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
+  margin-bottom: 24px;
+}
+
+.user-name-review {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.avatar-icon {
+  border-radius: 24px;
+}
+
+.icon-photo-name {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btns-arrow {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.btn-prev,
+.btn-next {
+  border: 1px solid rgba(41, 41, 41, 0.3);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+}
+
+.btn-prev:hover,
+.btn-next:hover,
+.btn-prev:focus,
+.btn-next:focus,
+.btn-prev:active,
+.btn-next:active {
+  background-color: #c9b6dd;
+}
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  cursor: not-allowed;
+  background: #e4e5e6;
+}
+
+.swiper-button-prev:disabled:hover,
+.swiper-button-next:disabled:hover {
+  background: #e4e5e6;
+}
+.not-found {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.reviews-title {
+  margin-top: 60px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+  position: relative;
+  animation: slideIn 1s ease-out, textEffect 2s ease-out forwards; /* Animation sequence */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textEffect {
+  0% {
+    text-shadow: 0 0 5px #5f8aff, 0 0 10px #5f8aff, 0 0 15px #ba7bfe;
+    color: #fff;
+  }
+  50% {
+    text-shadow: 0 0 10px #5f8aff, 0 0 20px #5f8aff, 0 0 30px #ba7bfe;
+    color: #ba7bfe;
+  }
+  100% {
+    text-shadow: 0 0 5px #5f8aff, 0 0 10px #5f8aff, 0 0 15px #ba7bfe;
+    color: #fff;
+  }
+}
+
+.reviews-title:hover {
+  color: #5f8aff;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* On smaller screens, make reviews stack vertically */
+  .reviews-container {
+    gap: 20px;
+    padding: 40px 10px;
+  }
+
+  .reviews-container .review {
+    width: 100%; /* Stack reviews vertically */
+  }
+
+  .reviews-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviews-title {
+    font-size: 32px;
+  }
+}

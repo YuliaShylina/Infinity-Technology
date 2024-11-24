@@ -1,5 +1,7 @@
 .header {
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  background-color: #2e2f42;
+  color: antiquewhite;
 }
 .nav {
   display: flex;
@@ -20,6 +22,7 @@
   position: relative;
   display: block;
   font-weight: 500;
+  font-size: 24px;
   letter-spacing: 0.02em;
   transition: 200ms ease-in;
 }
@@ -27,6 +30,50 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+.nav-link-infinity {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Impact', sans-serif;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  animation: slideIn 1s ease-out, glowEffect 2s ease-out infinite alternate;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Анімація появи */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Анімація ефекту світіння */
+@keyframes glowEffect {
+  0% {
+    text-shadow: 0 0 5px #5f8aff, 0 0 10px #5f8aff, 0 0 15px #ba7bfe;
+    color: #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 10px #5f8aff, 0 0 20px #5f8aff, 0 0 30px #ba7bfe;
+    color: #ba7bfe;
+  }
+  100% {
+    text-shadow: 0 0 5px #5f8aff, 0 0 10px #5f8aff, 0 0 15px #ba7bfe;
+    color: #ffffff;
+  }
+}
+
 .nav-link::after {
   content: '';
   position: absolute;

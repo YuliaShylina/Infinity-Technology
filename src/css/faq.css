@@ -1,0 +1,129 @@
+.section-faq {
+  margin-top: 120px;
+  display: flex; /* Use Flexbox to align items horizontally */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Space between the image and FAQ list */
+}
+
+.section-faq-block {
+  display: flex;
+}
+
+.faq-title {
+  font-family: Impact, sans-serif;
+  text-transform: uppercase;
+  font-size: 52px;
+  letter-spacing: 0.03em;
+  line-height: 1.23077;
+  color: #292929;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-out;
+}
+
+.faq-title span {
+  color: #5f8aff;
+}
+
+.faq-img-block {
+  max-width: 100%; /* Make image responsive */
+  height: auto;
+}
+
+.accordion-list {
+  width: 100%; /* Adjust width of the accordion list */
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-title span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+.accordion-title span svg {
+  fill: #ba7bfe;
+}
+
+.accordion-block.active {
+  background-color: rgba(95, 138, 255, 0.2);
+  border-radius: 16px;
+}
+
+.accordion-block.active .accordion-title {
+  padding: 28px 24px 24px 24px;
+}
+
+.accordion-list-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.accordion-content {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.1s ease-out 0.5s,
+    visibility 0.1s ease-out 0.5s;
+  padding: 0 24px;
+}
+
+.accordion-content.active {
+  visibility: visible;
+  opacity: 1;
+  padding: 24px;
+}
+
+.accordion-title span svg {
+  transition: transform 0.5s ease;
+}
+
+.accordion-title.active span svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-faq {
+    flex-direction: column; /* Stack image and accordion vertically on smaller screens */
+    align-items: center; /* Center align the content */
+  }
+
+  .faq-img {
+    order: 1; /* Keep the image on top */
+  }
+
+  .accordion-list {
+    order: 2; /* Keep accordion below the image */
+    width: 100%; /* Make accordion full width */
+  }
+}

@@ -1,0 +1,102 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.home-content {
+  z-index: 2;
+  max-width: 800px;
+  animation: fadeIn 2s ease-in-out;
+  margin-left: 500px;
+}
+
+.home-title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 200px;
+}
+
+.dynamic-text {
+  color: #00ffcc;
+  font-weight: 900;
+}
+
+.home-description {
+  font-size: 3rem;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #00ffcc;
+  font-weight: 800;
+}
+
+.home-btn {
+  background-color: #00ffcc;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #008f88;
+  transform: scale(1.05);
+}
+
+/* Анімація fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-images {
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.7);
+}
+
+.profile-img:nth-child(odd) {
+  margin-top: 0;
+}
+
+.profile-img:nth-child(even) {
+  margin-top: 20px;
+}
