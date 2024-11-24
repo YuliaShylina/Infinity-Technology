@@ -89,3 +89,40 @@
 .nav-link.active::after {
   background: #747bff;
 }
+
+@media screen and (max-width: 768px) {
+  /* Убираем меню навигации и логотип */
+  .nav-list,
+  .nav-logo {
+    display: none;
+  }
+
+  /* Настройка бургер-меню */
+  .burger-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: #747bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    margin: 4px auto;
+    border-radius: 2px;
+  }
+
+  .nav-link-infinity {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+}

@@ -100,3 +100,40 @@
 .profile-img:nth-child(even) {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  /* Убираем изображения */
+  .home-images {
+    display: none;
+  }
+
+  /* Уменьшаем шрифт для home-title и home-description */
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Уменьшаем отступ */
+  }
+
+  .home-description {
+    font-size: 1rem;
+    margin-bottom: 16px; /* Уменьшаем отступ */
+  }
+
+  /* Убираем кнопку */
+  .home-btn {
+    display: none;
+  }
+
+  /* Центрируем текстовое содержимое */
+  .home-content {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Корректируем высоту секции для компактности */
+  .home {
+    height: auto;
+    background-position: center top; /* Подгоняем фон */
+    padding: 0;
+  }
+}
