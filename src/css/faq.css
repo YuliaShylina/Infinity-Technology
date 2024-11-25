@@ -13,7 +13,7 @@
 .faq-title {
   font-family: Impact, sans-serif;
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 48px;
   letter-spacing: 0.03em;
   line-height: 1.23077;
   color: #292929;
@@ -125,5 +125,12 @@
   .accordion-list {
     order: 2; /* Keep accordion below the image */
     width: 100%; /* Make accordion full width */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .faq-title {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 }

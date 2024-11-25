@@ -125,10 +125,9 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 18px; /* Збільшення шрифта тексту */
+  font-size: 18px;
 }
 
-/* Анімація для плавного входу */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -152,20 +151,39 @@
 }
 
 @media screen and (max-width: 768px) {
+  .second-section {
+    padding: 0;
+  }
+  .second-section-title {
+    font-size: 32px; /* Зменшуємо заголовок на маленьких екранах */
+  }
   .second-section-list-ul {
     flex-direction: column; /* На мобільних пристроях робимо список вертикальним */
   }
   .second-section-list {
     width: 100%;
   }
+  .section-title {
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .second-section-title {
-    font-size: 28px; /* Зменшуємо заголовок на маленьких екранах */
+    font-size: 20px; /* Зменшуємо заголовок на маленьких екранах */
   }
 
   .second-section-text {
     font-size: 16px; /* Зменшуємо текст на маленьких екранах */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .second-section-title {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 32px;
   }
 }

@@ -65,6 +65,10 @@
   cursor: pointer;
 }
 
+.btn-box {
+  margin-top: 40px;
+}
+
 .btn-prev,
 .btn-next {
   border: 1px solid rgba(41, 41, 41, 0.3);
@@ -155,7 +159,7 @@
   }
 
   .reviews-title {
-    font-size: 36px;
+    font-size: 20px;
     margin-bottom: 40px;
   }
 }
@@ -163,5 +167,16 @@
 @media screen and (max-width: 600px) {
   .reviews-title {
     font-size: 32px;
+  }
+  .user-review {
+    padding: 16px; /* Еще меньше отступы для мобильных */
+    font-size: 12px; /* Меньший размер шрифта */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews-title {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 }

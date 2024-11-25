@@ -57,7 +57,6 @@
   transform: scale(1.05);
 }
 
-/* Анімація fadeIn */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -101,8 +100,7 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  /* Убираем изображения */
+@media screen and (max-width: 1279px) {
   .home-images {
     display: none;
   }
@@ -132,7 +130,7 @@
 
   /* Корректируем высоту секции для компактности */
   .home {
-    height: 100vh;
+    height: 50vh;
     background-position: center top; /* Подгоняем фон */
     padding: 0;
   }

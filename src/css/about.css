@@ -157,6 +157,15 @@
 
 /* Адаптивність */
 @media (max-width: 768px) {
+  .about-section {
+    padding: 0;
+  }
+
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
   .am-summary,
   .am-headline {
     flex: 1 1 100%; /* Блоки займають всю ширину */
@@ -169,5 +178,12 @@
   .am-summary:hover,
   .am-headline:hover {
     transform: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 }

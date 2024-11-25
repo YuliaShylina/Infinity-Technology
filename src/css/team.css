@@ -158,3 +158,33 @@
 .dot.active {
   background-color: #007bff;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .third-section-team img {
+    width: 200px; /* Уменьшаем ширину изображения */
+    height: 200px; /* Устанавливаем одинаковую высоту для круглых изображений */
+    border-radius: 50%; /* Делаем изображения круглыми */
+    object-fit: cover; /* Чтобы изображения не искажались */
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .third-section-member {
+    font-size: 20px;
+  }
+
+  .third-section-team {
+    flex: none;
+  }
+
+  .third-section-list {
+    gap: 80px;
+  }
+}
