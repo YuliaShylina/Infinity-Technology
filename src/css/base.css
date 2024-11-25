@@ -31,3 +31,41 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+/* BTN SCROLL TO TOP */
+
+.btn-scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: var(--color-general-btn);
+  background-color: var(--color-bg-btn);
+  border: 1px solid var(--color-general-btn);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, scale 0.3s ease;
+}
+
+.icon {
+  fill: var(--color-general-btn);
+}
+
+.btn-scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-scroll-to-top:hover {
+  transform: scale(0.95);
+}
+
+.btn-scroll-to-top:hover .icon {
+  fill: var(--color-accent);
+}

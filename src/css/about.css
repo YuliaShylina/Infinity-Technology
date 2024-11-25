@@ -165,4 +165,9 @@
   .about-block {
     gap: 10px; /* Менший відступ на маленьких екранах */
   }
+
+  .am-summary:hover,
+  .am-headline:hover {
+    transform: none;
+  }
 }

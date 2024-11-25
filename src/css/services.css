@@ -155,6 +155,9 @@
   .second-section-list-ul {
     flex-direction: column; /* На мобільних пристроях робимо список вертикальним */
   }
+  .second-section-list {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {

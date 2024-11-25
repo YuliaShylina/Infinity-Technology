@@ -132,7 +132,7 @@
 
   /* Корректируем высоту секции для компактности */
   .home {
-    height: auto;
+    height: 100vh;
     background-position: center top; /* Подгоняем фон */
     padding: 0;
   }
