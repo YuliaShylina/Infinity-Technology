@@ -338,3 +338,16 @@
     transform: scale(1.05);
   }
 }
+
+@media screen and (min-width: 1279px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e2f42;
+    color: antiquewhite;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

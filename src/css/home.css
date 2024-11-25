@@ -8,6 +8,9 @@
   color: #fff;
   padding: 20px;
   overflow: hidden;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .home-content {
@@ -129,5 +132,10 @@
     height: 50vh;
     background-position: center top;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .home {
+    margin-top: 120px;
   }
 }
