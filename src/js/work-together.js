@@ -63,7 +63,6 @@ export function manageModal() {
             return response.json();
           })
           .then(post => {
-            // console.log(post)
             workTogetherModalTitle.textContent = post.title;
             workTogetherModalText.textContent = post.message;
             workTogetherModal.classList.add('active');

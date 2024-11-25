@@ -53,7 +53,6 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Основний контейнер */
 .third-section {
   background-color: #f4f4fd;
   padding: 40px 0;
@@ -62,8 +61,8 @@
 .team-container {
   max-width: 100%;
   margin: 0 auto;
-  overflow: hidden; /* Убираем прокрутку */
-  position: relative; /* Для позиционирования дотов */
+  overflow: hidden;
+  position: relative;
 }
 
 .team-carousel {
@@ -74,8 +73,8 @@
 .third-section-list {
   display: flex;
 
-  gap: 40px; /* Расстояние между карточками */
-  transition: transform 0.8s ease-in-out; /* Плавное перемещение */
+  gap: 40px;
+  transition: transform 0.8s ease-in-out;
   width: fit-content;
 }
 
@@ -114,7 +113,7 @@
   position: absolute;
   margin: 40px 0;
   left: 50%;
-  transform: translateX(-50%); /* Центрируем доты */
+  transform: translateX(-50%);
 }
 
 .social-list {
@@ -165,10 +164,10 @@
     margin-bottom: 40px;
   }
   .third-section-team img {
-    width: 200px; /* Уменьшаем ширину изображения */
-    height: 200px; /* Устанавливаем одинаковую высоту для круглых изображений */
-    border-radius: 50%; /* Делаем изображения круглыми */
-    object-fit: cover; /* Чтобы изображения не искажались */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .section-title {

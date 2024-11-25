@@ -2,7 +2,6 @@
   padding: 60px 0;
   margin: 0 auto;
   width: 100%;
-  /* max-width: 320px; */
 }
 
 .section-title {
@@ -14,7 +13,7 @@
   letter-spacing: 2px;
   margin-bottom: 80px;
   position: relative;
-  animation: slideIn 1s ease-out, textEffect 2s ease-out forwards; /* Animation sequence */
+  animation: slideIn 1s ease-out, textEffect 2s ease-out forwards;
 }
 
 @keyframes slideIn {
@@ -155,10 +154,10 @@
     padding: 0;
   }
   .second-section-title {
-    font-size: 32px; /* Зменшуємо заголовок на маленьких екранах */
+    font-size: 32px;
   }
   .second-section-list-ul {
-    flex-direction: column; /* На мобільних пристроях робимо список вертикальним */
+    flex-direction: column;
   }
   .second-section-list {
     width: 100%;
@@ -170,11 +169,11 @@
 
 @media screen and (max-width: 480px) {
   .second-section-title {
-    font-size: 20px; /* Зменшуємо заголовок на маленьких екранах */
+    font-size: 20px;
   }
 
   .second-section-text {
-    font-size: 16px; /* Зменшуємо текст на маленьких екранах */
+    font-size: 16px;
   }
 }
 

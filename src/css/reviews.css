@@ -111,7 +111,7 @@
   letter-spacing: 2px;
   margin-bottom: 80px;
   position: relative;
-  animation: slideIn 1s ease-out, textEffect 2s ease-out forwards; /* Animation sequence */
+  animation: slideIn 1s ease-out, textEffect 2s ease-out forwards;
 }
 
 @keyframes slideIn {
@@ -146,16 +146,15 @@
   transform: scale(1.1);
   transition: transform 0.3s ease, color 0.3s ease;
 }
-/* Media Queries */
+
 @media screen and (max-width: 768px) {
-  /* On smaller screens, make reviews stack vertically */
   .reviews-container {
     gap: 20px;
     padding: 40px 10px;
   }
 
   .reviews-container .review {
-    width: 100%; /* Stack reviews vertically */
+    width: 100%;
   }
 
   .reviews-title {
@@ -169,8 +168,8 @@
     font-size: 32px;
   }
   .user-review {
-    padding: 16px; /* Еще меньше отступы для мобильных */
-    font-size: 12px; /* Меньший размер шрифта */
+    padding: 16px;
+    font-size: 12px;
   }
 }
 

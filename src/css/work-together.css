@@ -206,8 +206,8 @@
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   white-space: nowrap;
-  width: auto; /* Ширина кнопки за контентом */
-  margin: 16px auto 32px; /* Вирівнювання по центру */
+  width: auto;
+  margin: 16px auto 32px;
   display: block;
 }
 

@@ -105,33 +105,29 @@
     display: none;
   }
 
-  /* Уменьшаем шрифт для home-title и home-description */
   .home-title {
     font-size: 2rem;
-    margin-bottom: 20px; /* Уменьшаем отступ */
+    margin-bottom: 20px;
   }
 
   .home-description {
     font-size: 1rem;
-    margin-bottom: 16px; /* Уменьшаем отступ */
+    margin: 16px;
   }
 
-  /* Убираем кнопку */
   .home-btn {
     display: none;
   }
 
-  /* Центрируем текстовое содержимое */
   .home-content {
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
   }
 
-  /* Корректируем высоту секции для компактности */
   .home {
     height: 50vh;
-    background-position: center top; /* Подгоняем фон */
+    background-position: center top;
     padding: 0;
   }
 }
