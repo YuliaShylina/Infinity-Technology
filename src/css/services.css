@@ -119,6 +119,10 @@
   height: auto;
 }
 
+#scrollToTop {
+  display: none;
+}
+
 .second-section-text {
   color: #434455;
   line-height: 1.5;
@@ -184,5 +188,101 @@
 
   .section-title {
     font-size: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #scrollToTop {
+      position: fixed;
+      bottom: 30px; /* Подняли немного выше */
+      right: 30px; /* Добавили отступ справа */
+      width: 60px; /* Увеличили ширину кнопки */
+      height: 60px; /* Увеличили высоту кнопки */
+      border: none;
+      border-radius: 50%; /* Круглая форма */
+      background-color: #e8daff; /* Нежно-фиолетовый цвет */
+      color: #5f4b8b; /* Темно-фиолетовый цвет стрелки */
+      display: flex; /* Центровка содержимого */
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 800; /* Размер стрелки внутри кнопки */
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.2s ease;
+      z-index: 1000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    }
+
+    /* Кнопка видимая */
+    #scrollToTop.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: scale(1); /* Нормальный размер при показе */
+    }
+
+    /* Анимации при наведении */
+    #scrollToTop:hover {
+      background-color: #d6c4f9; /* Более насыщенный оттенок при наведении */
+      transform: scale(1.1); /* Легкое увеличение */
+      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Усиленная тень */
+    }
+
+    /* Анимация при клике */
+    #scrollToTop:active {
+      transform: scale(0.95); /* Легкое сжатие при клике */
+    }
+  }
+}
+@media screen and (min-width: 1279px) {
+  #scrollToTop {
+    position: fixed;
+    bottom: 30px; /* Подняли немного выше */
+    right: 30px; /* Добавили отступ справа */
+    width: 60px; /* Увеличили ширину кнопки */
+    height: 60px; /* Увеличили высоту кнопки */
+    border: none;
+    border-radius: 50%; /* Круглая форма */
+    background-color: #e8daff; /* Нежно-фиолетовый цвет */
+    color: #5f4b8b; /* Темно-фиолетовый цвет стрелки */
+    display: flex; /* Центровка содержимого */
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 800; /* Размер стрелки внутри кнопки */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.2s ease;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  }
+
+  /* Кнопка видимая */
+  #scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: scale(1); /* Нормальный размер при показе */
+  }
+
+  /* Анимации при наведении */
+  #scrollToTop:hover {
+    background-color: #d6c4f9; /* Более насыщенный оттенок при наведении */
+    transform: scale(1.1); /* Легкое увеличение */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Усиленная тень */
+  }
+
+  /* Анимация при клике */
+  #scrollToTop:active {
+    transform: scale(0.95); /* Легкое сжатие при клике */
+  }
+
+  #scrollToTop::before {
+    content: '↑';
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+    color: #5f4b8b;
   }
 }

@@ -1,5 +1,5 @@
 import { buttonFaq } from './js/faq.js';
-
+import './js/scrollToTop.js';
 import { manageModal } from './js/work-together.js';
 import './js/team.js';
 import './js/reviews.js';
