@@ -53,129 +53,124 @@
   gap: 40px;
   align-items: stretch;
   flex-wrap: wrap;
+}
+.am-summary,
+.am-headline {
+  flex: 1 1 calc(50% - 20px);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.8),
+      rgba(46, 47, 66, 0.8)
+    ),
+    url(../img/Abstract_Tech_Background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.am-summary p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: justify;
+  color: #cd25eb;
+  line-height: 1.6;
+}
+
+.am-summary:hover,
+.am-headline:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+}
+
+#welcome {
+  color: #eb2525;
+  font-weight: 800;
+}
+#website {
+  color: #2e2f42;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 80px 0;
+  position: relative;
+  animation: slideIn 1s ease-out, glowEffect 2s ease-out infinite alternate;
+  font-weight: 800;
+}
+
+#business {
+  color: #25eb7e;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#gold {
+  color: #ebe125;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-icon {
+  padding: 12px;
+}
+
+.why-choose-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ba7bfe;
+}
+
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-choose-item {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #b697d7;
+}
+
+.reason-number {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #ed3b44;
+}
+
+@media (max-width: 767px) {
+  .about-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 
   .am-summary,
   .am-headline {
-    flex: 1 1 calc(50% - 20px);
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.8),
-        rgba(46, 47, 66, 0.8)
-      ),
-      url(../img/Abstract_Tech_Background.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 100%;
   }
 
-  .am-summary p {
-    font-size: 20px;
-    font-style: italic;
-    text-align: justify;
-    color: #cd25eb;
-    line-height: 1.6;
+  .about-block {
+    gap: 10px;
   }
 
   .am-summary:hover,
   .am-headline:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #f5f5f5;
+    transform: none;
   }
+}
 
-  #welcome {
-    color: #eb2525;
-    font-weight: 800;
-  }
-  #website {
-    color: #2e2f42;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 80px 0;
-    position: relative;
-    animation: slideIn 1s ease-out, glowEffect 2s ease-out infinite alternate;
-    font-weight: 800;
-  }
-
-  #business {
-    color: #25eb7e;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
-
-  #gold {
-    color: #ebe125;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
-
-  .logo-block {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-logo-icon {
-    padding: 12px;
-  }
-
-  .why-choose-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ba7bfe;
-  }
-
-  .why-choose-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .why-choose-item {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #b697d7;
-  }
-
-  .reason-number {
-    font-weight: bold;
-    margin-right: 10px;
-    color: #ed3b44;
-  }
-
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 0;
-    }
-
-    .about-title {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-
-    .am-summary,
-    .am-headline {
-      flex: 1 1 100%;
-    }
-
-    .about-block {
-      gap: 10px;
-    }
-
-    .am-summary:hover,
-    .am-headline:hover {
-      transform: none;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .about-title {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 }

@@ -123,15 +123,14 @@
   }
 
   .home-content {
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
   }
 
   .home {
-    height: 50vh;
     background-position: center top;
-    padding: 0;
   }
 }
 @media screen and (min-width: 1279px) {
